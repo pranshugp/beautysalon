@@ -52,6 +52,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/navbar.css';
+import { FaBars, FaTimes } from "react-icons/fa6";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -68,7 +69,7 @@ const Navbar = () => {
         </div>
         
         <div className="menu-icon" onClick={toggleMenu}>
-          <i className={isOpen ? 'fas fa-times' : 'fas fa-bars'} />
+          <i className={isOpen ? '<FaTimes/>' : '<FaBars/>'} />
         </div>
         <ul className={isOpen ? 'nav-menu active' : 'nav-menu'}>
           <li className="nav-item">
